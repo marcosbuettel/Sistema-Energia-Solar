@@ -1,0 +1,1325 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #2D323E;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+li{
+  	list-style-type: none;
+}
+
+.container{
+	max-width: 1280px;
+	margin:0 auto;
+}
+
+body{
+	background-color: #F7F7F7;
+}
+
+
+/********************************************************************
+						INICIO LOGIN
+********************************************************************/
+.login-sistema{
+	height: 100%;
+	color: white;
+	text-align: center;
+}
+
+.login-sistema img{
+	width: 260px;
+	margin-bottom: -200px;
+}
+
+.login-sistema-box{
+	border-radius: 15px;
+	padding: 40px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+	width: 400px;
+	background-color: #2D323E;
+	position: relative;
+	top: 150px;
+	left: 50%;
+	transform: translateX(-50%);	
+	/*background: linear-gradient(235deg, rgba(2,0,36,1) 0%, rgba(81,174,228,1) 100%, rgba(54,177,231,1) 100%, rgba(0,212,255,1) 100%);*/
+}
+
+input{
+	border: none;
+}
+
+input:focus{
+	box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.input{
+	background-color: white;
+	padding: 10px 20px;
+	display: flex;
+	margin: 10px auto;
+	width: 300px;
+	border: #F4F4F4 1px solid;
+	border-radius: 20px;
+}
+
+.login-sistema-box button{
+	cursor: pointer;
+	font-weight: bold;
+	color: #222222;
+	height: 40px;
+	border: none;
+	border-radius: 20px;
+	width: 100%;
+	background-color: white;
+}
+
+.botao-login{
+	display: flex;
+	align-items: center;
+}
+
+.botao-login button{
+	margin: 0 auto;
+}
+
+
+.dados-incorretos{
+	text-align: center; 
+}
+
+/********************************************************************
+						INICIO PÁGINA CALENDARIO
+********************************************************************/
+
+.header-calendario{
+	padding: 20px 30px;
+	background-color: #2D323E;
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	align-content: center;
+	font-size: 14px; 
+	border-bottom: 5px solid #F1F1F1;
+	position: relative;
+}
+
+.header-calendario-mobile{
+	padding: 20px 30px;
+	background-color: #2D323E;
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	align-content: center;
+	font-size: 14px; 
+	border-bottom: 5px solid #F1F1F1;
+	position: relative;
+	display: none;
+}
+
+.logo-header-calendario img{
+	width: 100px!important;
+	position: absolute;
+}
+
+.logo-header-calendario-mobile img{
+	width: 100px!important;
+	position: relative;
+	top: -20px;
+}
+
+.header-calendario img{
+	width: 30px;
+}
+
+.name-icon{
+	display: flex;
+}
+
+.header-calendario h2{
+	margin-left: 12px;
+}
+
+.voltar-pagina-calendario{
+	display: flex;
+	font-size: 22px;
+	font-weight: bold;
+	background-color: #2D323E;
+	border-radius: 30px;
+	padding: 10px;
+	color: white;
+	width: 120px;
+	margin: 10px;
+}
+
+.voltar-pagina-calendario i{
+	margin-right: 10px;
+	color: white;
+}
+
+/********************************************************************
+						INICIO FILTROS
+********************************************************************/
+
+.filtros-wrapper{
+	display: flex;
+	justify-content: space-around;
+	padding: 20px 0;
+}
+
+.filtros-box, .status-box{
+	display: flex;
+}
+
+.filtros-box a, .status-box a{
+	margin: 0 5px;
+	padding: 5px;
+	border-radius: 10px;
+	margin-top: -5px;
+}
+
+.filtros-box a:nth-child(2){
+	background-color: #34D399;
+}
+
+.filtros-box a:nth-child(3){
+	background-color: #60A5FA;
+}
+
+.filtros-box a:nth-child(4){
+	background-color: #F472B6;
+}
+
+.filtros-box a:nth-child(5){
+	background-color: #1D4ED8;
+}
+
+.filtros-box a:nth-child(6){
+	background-color: #F87171;
+}
+
+.filtros-box a:nth-child(7){
+	background-color: #FBBF24;
+}
+
+.filtros-box a:nth-child(8){
+	background-color: #374151;
+}
+
+.status-box a:nth-child(2){
+	background-color: #6B7280;
+}
+
+
+.status-box a:nth-child(3){
+	background-color: #4B5563;
+}
+
+
+.status-box a:nth-child(4){
+	background-color: #374151;
+}
+
+/********************************************************************
+						INÍCIO CALENDARIO
+********************************************************************/
+
+.calendario-wrapper{
+	padding: 40px 0;
+	width: 100%;
+}
+
+.dias-wrapper{
+	display: flex;
+	justify-content: space-around;
+}
+
+.calendario-box-wrapper{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10px;
+}
+
+.calendario-box{
+	color: white;
+	width: 14%;
+	margin: 5px 0;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 12px;
+}
+
+.calendario-box-vazia{
+	color: white;
+	width: 14%;
+	margin: 5px 0;
+	padding: 68px 0;
+	background-color: #E5E7EB;
+	border-radius: 10px;
+	font-size: 12px;
+	text-align: center;
+}
+
+.calendario-box-vazia img{
+	width: 50px;
+}
+
+.dia-status{
+	display: flex;
+	justify-content: space-between; 
+}
+
+.dia-status p:nth-child(1){
+	color: black;
+	background-color: white;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.dia-status p:nth-child(2){
+	background-color: #4B5563;
+	color: white;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.separador{
+	width: 100%;
+	height: 1px;
+	background-color: white;
+	margin: 10px 0;
+}
+
+.separador-preto{
+	width: 100%;
+	height: 1px;
+	background-color: black;
+	margin: 10px 0;
+}
+
+.calendario-box button{
+	margin: 0 auto;
+	background-color: white;
+	border-radius: 20px;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+.calendario-box button:hover{
+	color: white;
+	background-color: black;
+	transition: 0.5s;
+}
+
+/*.calendario-box button:nth-child(2){
+	background-color: #EA0303;
+	color: white;
+}*/
+
+.producao-bloco-calendario p{
+	background-color: #2D323E;
+	width: 80px;
+	text-align: center;
+	padding: 2px;
+	border-radius: 10px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.botao-calendario{
+	display: flex;
+	align-items: center;
+}
+
+.muda-status-bloco{
+	position: relative;
+}
+
+.muda-status-bloco i{
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.muda-status-bloco-lista{
+	position: absolute;
+	display: none;
+}
+
+.muda-status-bloco-lista li{
+	padding: 10px 5px;
+	background-color: black;
+	cursor: pointer;
+}
+
+.muda-status-bloco-lista li:hover{
+	background-color: white;
+	color: black;
+}
+
+/********************************************************************
+				 JANELA-CADASTRO-BLOCO-CALENDARIO
+********************************************************************/
+.janela-cadastro-bloco-calendario-wrapper{
+	background-color: #E5E7EB!important;
+}
+
+.janela-cadastro-bloco-calendario{
+	width: 500px;
+	position: absolute;
+	z-index: 999;
+	background-color: white; 
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 100px;
+	border-radius: 10px;
+}
+
+.janela-cadastro-bloco-calendario img{
+	width: 30px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: red;
+	cursor: pointer;
+}
+
+.janela-editar-bloco-calendario{
+	width: 500px;
+	position: absolute;
+	z-index: 999;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 100px;
+	border-radius: 10px;
+}
+
+.janela-editar-bloco-calendario img{
+	width: 30px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: red;
+	cursor: pointer;
+}
+
+.header-janela-modal{
+	padding: 10px;
+	color: white;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: #2D323E;
+}
+
+.cadastro-comentario button{
+	color: white;
+	background-color: #01BC00;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px 15px;
+	position: relative;
+	top: -10px;
+}
+
+.escrever-novo-comentario{
+	background-color: white;
+	height:45px;
+	border-top: 1px solid black;
+	margin-bottom: 10px;
+	padding: 5px 10px;
+	width: 100%;
+	position: relative;
+}
+
+.escrever-novo-comentario form{	
+	display: flex;
+	justify-content: space-between;
+}
+
+.escrever-novo-comentario button{
+	background-color: rgba(0,0,0,0);
+	border: none;
+	cursor: pointer;
+}
+
+.escrever-novo-comentario textarea{
+	outline: none;
+	border-radius: 0!important;
+	max-height: 40px;
+	background-color: rgba(0,0,0,0);
+	width: 400px;
+}
+
+.escrever-novo-comentario i{
+	font-size: 24px;
+	margin-top: -2px;
+	background-color: rgba(0,0,0,0);
+}
+
+.enviar-comentario{
+	font-weight: bold;
+	color: white;
+	background-color: #C3C3C3;
+	padding: 5px 10px;
+	position: absolute;
+	right: 5px;
+	top: 40px;
+	display: none;
+}
+
+.info-cadastro-bloco-calendario{
+	padding: 10px;
+}
+
+.info-cadastro-bloco-calendario-box{
+	background-color: #F5F5F5;
+	padding: 10px 5px;
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(212,212,212,1);
+	-moz-box-shadow: 0px 0px 5px 2px rgba(212,212,212,1);
+	box-shadow: 0px 0px 5px 2px rgba(212,212,212,1);
+}
+
+.tipo-bloco{
+	margin-top: 5px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.img-close{
+	display: flex;
+	justify-content: space-between;
+}
+
+.img-close img{
+	width: 24px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.img-close img:hover{
+	transition: 0.5s;
+	width: 26px;
+}	
+
+.dia-mes-bloco{
+	display: flex;
+	justify-content: space-around;
+	padding: 10px 0;
+	font-size: 20px;
+}
+
+.dia-mes-bloco input{
+	width: 50px!important;
+	height: 30px!important;
+	font-size: 25px;
+	text-align: center;
+	position: relative;
+	top: 5px;
+	left: 5px;
+}
+
+.tema-bloco input{
+	width: 100%!important;
+	margin: 5px auto;
+	font-size: 20px;
+	padding: 10px;
+}
+
+textarea{
+	width: 100%;
+	height: 100px;
+	resize:none!important;
+	padding: 5px!important;
+}
+
+.info-cadastro-bloco-calendario button{
+	background-color: #01BC00;
+	border: none;
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+.botao-cadastro-bloco{
+	text-align: center;
+}
+
+.botoes-linha-tempo{
+	text-align: center;
+}
+
+.botoes-linha-tempo a{
+	padding: 5px;
+	margin-top: 10px;
+	font-size: 20px;
+	border-radius: 5px;
+	background-color: #F3E400!important;
+}
+
+
+/********************************************************************
+				 COMENTARIOS-BLOCO-CALENDARIO
+********************************************************************/
+
+.comentarios-bloco{
+	margin-top: 10px;
+	padding: 10px;
+	overflow-y: scroll;
+	max-height: 300px; 
+	background-color: white;
+}
+
+.comentarios-bloco img{
+	width: 200px;
+	cursor: pointer;
+}
+
+.comentario-box{
+	
+}
+
+.janela-cadastro-comentario{
+	border: 1px solid black;
+	display: none;
+	width: 500px;
+	position: fixed;
+	z-index: 9999;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 200px;
+	border-radius: 10px;
+}
+
+.janela-cadastro-comentario img{
+	width: 30px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: red;
+	cursor: pointer;
+}
+
+.janela-editar-comentario{
+	border: 1px solid black;
+	width: 500px;
+	position: fixed;
+	z-index: 9999;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 200px;
+	border-radius: 10px;
+}
+
+.janela-editar-comentario img{
+	width: 30px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: red;
+	cursor: pointer;
+}
+
+.adicionar-comentario-bloco{
+	padding: 10px;
+}
+
+.edit-delete-comentario{
+	display: flex;
+	justify-content: space-between;
+	width: 60px;
+	border: 1px solid black;
+	padding: 2px 5px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.edit-delete-comentario i{
+	font-size: 20px;
+	cursor: pointer;
+}
+
+
+.imagem-aumentada{
+	position: absolute;
+	background-color: white;
+	width: 1000px;
+	left: -50%;
+	top: 80px;
+	z-index: 999999;
+	border-radius: 15px;
+}
+
+.fechar-imagem-aumentada{
+	position: relative;
+}
+
+.fechar-imagem-aumentada img{
+	width: 40px;
+	position: absolute;
+	right: -20px;
+	top: -60px;
+	cursor: pointer;
+	z-index: 9999;
+}
+
+.aprovar-card{
+	text-align: center;
+	margin-top: 10px;
+}
+
+.anexar-foto{
+	padding: 2px 5px;
+}
+
+.imagens-comentario{
+	display: flex;
+	overflow-x: scroll;
+}
+
+.imagens-comentario img{
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+.imagens-por-comentario{
+	display: flex;
+	overflow-x: scroll;
+}
+
+.imagens-por-comentario img{
+	width: auto;
+	margin: 10px 20px;
+}
+
+/********************************************************************
+				 JANELA-CADASTRO-BLOCO-CALENDARIO
+********************************************************************/
+
+.janela-descricao-bloco-calendario{
+	width: 100%;
+	position: absolute;
+	z-index: 999;
+	background-color: white; 
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	overflow-y: scroll;
+	min-height: 100%;
+}
+
+.janela-descricao-bloco-calendario > img{
+	width: 30px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: red;
+	cursor: pointer;
+}
+
+.janela-descricao-bloco-calendario textarea{
+	border: none;
+	font-size: 20px;
+	border-radius: 20px;
+}
+
+.descricao-img-instagram-wrapper{
+	padding: 20px 10%;
+}
+
+.descricao-img-instagram{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;	
+	margin: 0 auto;
+}
+
+.info-arte{
+	width: 500px;
+}
+
+.info-arte input{
+	background-color: green;
+}
+
+.cadastrar-arte{
+	width: 100%;
+	background-color: white;
+	display: flex;
+	justify-content: space-around;
+}
+
+.progresso-enviar-img{
+	display: none;
+	width: 200px;
+	margin: 0 auto;
+}
+
+.textarea-descricao textarea{
+	border-radius: 0;
+}
+
+.textarea-descricao textarea:focus{
+	border: none;
+	outline: none;
+}
+
+.etapas-aprovacao-wrapper{
+	width: 300px;
+	margin: 20px 0;
+	background-color: white;
+	padding: 10px 5px;
+}
+
+.etapas-aprovacao{
+	margin: 10px 0;
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+}
+
+.etapas-aprovacao a{
+	color: white;
+	font-size: 12px;
+	background-color: #CBCBCB;
+	padding: 5px;
+}
+
+.etapas-aprovacao i{
+	color: #01BC00;
+	position: relative;
+	z-index: 99999;
+}
+
+.separador-etapas-aprovacao{
+	background-color: #01BC00;
+	width: 85px;
+	height: 5px;
+	position: absolute;
+	top: 5px;
+	left: 55px;
+}
+
+.separador-etapas-aprovacao-right{
+	background-color: #01BC00;
+	width: 85px;
+	height: 5px;
+	position: absolute;
+	top: 5px;
+	left: 150px;
+}
+
+.separador-etapas-aprovacao-vazio{
+	background-color: #E5E7EB;
+	width: 85px;
+	height: 5px;
+	position: absolute;
+	top: 5px;
+	left: 55px;
+}
+
+.separador-etapas-aprovacao-vazio-right{
+	background-color: #E5E7EB;
+	width: 90px;
+	height: 5px;
+	position: absolute;
+	top: 5px;
+	left: 150px;
+}
+
+.data-arte{
+	background-color: white; 
+	padding: 5px;
+	width: 165px;
+	margin-bottom: 10px;
+}
+
+.aprovar-sugestao{
+	display: flex;
+}
+
+.box-info-arte{
+	background-color: #01BC00;
+	width: 160px;
+	color: white;
+	padding: 15px 20px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.img-instagram{
+	width: 500px;
+	margin-bottom: 20px;
+}
+
+.img-instagram img{
+	width: 100%;
+}
+
+.img-instagram-header{
+	background-color: white;
+	display: flex;
+	padding: 15px;
+	justify-content: space-between;
+}
+
+.img-instagram-header > i{
+	font-size: 30px;
+	color: #676767;
+	margin-top: 5px;
+}
+
+.img-instagram-perfil{
+	display: flex;
+}
+
+.img-instagram-perfil i{
+	font-size: 40px;
+	margin-right: 10px;
+}
+
+.interacao-instagram{
+	display: flex;
+	padding: 15px;
+	justify-content: space-between;
+	background-color: white;
+}
+
+.interacao-instagram i{
+	font-size: 28px;
+	margin-right: 20px;
+	position: relative;
+	top: -2px;
+}
+
+.interacao-instagram img{
+	width: 26px;
+	margin-right: 20px;
+}
+
+.interacao-instagram i:nth-child(1){
+	color: red;
+}
+
+.likes-instagram{
+	background-color: white;
+	display: flex;
+	padding: 5px 15px;
+	font-weight: bold;
+}
+
+.likes-instagram p{
+	position: relative;
+	top: -5px;
+	left: 5px;
+}
+
+.legenda-instagram{
+	background-color: white;
+	padding: 15px 15px;
+}
+
+.carrossel-instagram{
+	display: flex;
+	position: relative;
+}
+
+.carrossel-instagram-box{
+	min-width: 100%!important;
+}
+
+.acao-imagem-carrossel{
+	position: absolute;
+	color: white;
+	background-color: black;
+	padding: 10px;
+	border-radius: 48%;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.arrow-instagram{
+	position: absolute;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.arrow-left, .arrow-right{
+	top: 50%;
+}
+
+.arrow-right{
+	right: 10px;
+}
+
+.arrow-left{
+	left: 10px;
+}
+
+.qtd-img-instagram{
+	font-size: 16px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background-color: #595959;
+	color: white;
+	padding: 5px 10px;
+	padding-bottom: 7px;
+	border-radius: 30px;
+	font-weight: bold;
+}
+
+.titulo-arte{
+	background-color: white; 
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+/********************************************************************
+						LINHA DO TEMPO
+********************************************************************/
+.linha-tempo{
+	padding: 50px 150px;
+	margin-top: 40px;
+	overflow-x: scroll;
+	overflow-y: scroll;
+	max-height: 500px;
+}
+
+.linha-tempo-wrapper{
+	display: flex;
+}
+
+.linha-tempo-wrapper-box{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.box-linha-tempo i{
+	color: #45A8E1!important;
+	font-size: 40px;
+	position: relative;
+	top: -25px;
+	z-index: 999;
+}
+
+.box-linha-tempo > h2{
+	font-size: 14px;
+	position: relative;
+	left: -20px;
+	top: -10px;
+}
+
+.box-linha-tempo{
+	width: 400px;
+}
+
+.separador-linha-tempo{
+	border-top: 0px solid #45A8E1;
+	display: flex;
+}
+
+.separador-status{
+	width: 100%;
+	height: 10px;
+	top: -10px;
+	background-color: #45A8E1;
+	position: relative;
+
+}
+
+.ultimo-separador-linha-tempo{
+	border-top: 10px solid rgba(0,0,0,0);
+}
+
+.box-info-linha-tempo{
+	width: 300px;
+	min-height: 200px;
+	margin: 0 30px;
+	position: relative;
+	left: -135px;
+	-webkit-box-shadow: 0px 0px 11px 0px rgba(166,166,166,1);
+	-moz-box-shadow: 0px 0px 11px 0px rgba(166,166,166,1);
+	box-shadow: 0px 0px 11px 0px rgba(166,166,166,1);
+	border-radius: 2px;
+}
+
+.box-info-linha-tempo p{
+	max-width: 290px;
+	max-height: 200px;
+	overflow-y: scroll;
+
+}
+
+.box-info-linha-tempo > h2, .box-info-linha-tempo > p{
+	font-size: 16px;
+	padding: 5px;
+} 
+
+.data-box-info{
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.data-box-info p{
+	margin: 10px 0;
+}
+
+/********************************************************************
+						QUADRO DE SOLICITAÇÕES
+********************************************************************/
+.head-quadro-solicitacao{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	background-color: #2D323E;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 20px 40px;
+}
+
+.voltar-solicitacao{
+	display: flex;
+	font-size: 14px;
+	background-color: white;
+	border-radius: 20px;
+	color: #45A8E1;
+	padding: 5px 10px;
+
+}
+
+.quadro-solicitacao-wrapper{
+	padding-bottom: 30px; 
+	height: 600px;
+	overflow-x: scroll;
+}
+
+.quadro-solicitacao-wrapper i{
+	color: #2D323E!important;
+}
+
+.quadro-solicitacao{	
+	display: flex;		
+}
+
+.colunas-quadro-solicitacao{
+	padding: 20px 0;
+	text-align: center;
+	min-width: 300px;
+	font-size: 10px;
+}
+
+.bloco-solicitacao{
+	position: relative;
+	text-align: left;
+	padding: 5px;
+	margin: 20px auto;
+	width: 250px;
+	height: 170px;
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 11px -2px rgba(125,125,125,1);
+	-moz-box-shadow: 0px 0px 11px -2px rgba(125,125,125,1);
+	box-shadow: 0px 0px 11px -2px rgba(125,125,125,1);
+	cursor: pointer;
+}
+
+.bloco-solicitacao i{
+	color: #45A8E1;
+	font-size: 16px;
+}
+
+.remover-solicitacao{
+	position: absolute;
+	background-color: #696969;
+	color: white;
+	padding: 10px;
+	right: -10px;
+	top: 25px;
+	display: none;
+}
+
+.bloco-solicitacao h3{
+	margin: 5px 0;
+}
+
+.bloco-solicitacao-footer{
+	width: 95%;
+	position: absolute;
+	bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid black;
+	padding-top: 10px;
+}
+
+.modificar-status-solicitacao{
+	background-color: black;
+	color: white;
+	position: absolute;
+	right: 0;
+	top: 20px;
+	text-align: center;
+	z-index: 999999;
+	display: none;
+}
+
+.modificar-status-solicitacao li{
+	padding: 5px;	
+}
+
+.modificar-status-solicitacao li:hover{
+	background-color: white;
+	color: black;	
+}
+
+.arrow-mudar-coluna i{
+	margin: 0 2px;
+}
+
+.bloco-solicitacao:hover{
+	background-color: #F3F3FF;
+}
+
+/********************************************************************
+						MEDIA QUERIES
+********************************************************************/
+
+@media screen and (max-width: 1100px){
+	.imagem-aumentada{
+		max-width: 90%;
+		left: auto;
+	}
+}
+
+@media screen and (max-width: 900px){
+
+	.header-calendario{
+		display: none;
+	}
+
+	.header-calendario-mobile{
+		display: block;
+		text-align: center;
+	}	
+
+	.name-icon{
+		margin-top: -40px; 
+		display: flex;
+		justify-content: space-between;
+		font-size: 12px;
+		align-items: center;
+	}
+
+	.name-icon img{
+		width: 30px;
+	}
+
+	.janela-cadastro-bloco-calendario{
+		width: 90%;
+	}
+
+	.janela-editar-bloco-calendario{
+		width: 90%;
+	}
+
+	.filtros-wrapper{
+		display: flex;
+		flex-direction: column;
+		align-items: center; 
+		font-size: 12px;
+	}
+
+	.filtros-wrapper div{
+		margin: 10px 0;
+	}
+
+	.dias-wrapper{
+		display: none;
+	}
+
+	.calendario-box-wrapper{
+		flex-direction: column;
+	}
+
+	.calendario-box{
+		width: 100%;
+	}
+
+	.calendario-box-vazia{
+		width: 100%;
+	}
+
+	.janela-descricao-bloco-calendario{
+		width: 100%!important;
+	}
+
+	.img-instagram{
+		width: 100%;
+	}
+
+	.janela-cadastro-comentario{
+		width: 90%;
+	}
+
+	.janela-editar-comentario{
+		width: 90%;	
+	}
+
+	.info-arte{
+		width: 90%;
+	}
+
+	.etapas-aprovacao-mobile{
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 5px;
+	}
+}
+
+@media screen and (max-width: 450px){
+
+}

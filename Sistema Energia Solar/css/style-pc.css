@@ -1,0 +1,838 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: lato;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+header{
+	position: fixed;
+	width: 100%;
+	padding: 20px 0;
+	background-color: #333333;
+	z-index: 999999;
+}
+
+
+
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.header{
+	color: white;
+	display: flex;
+	justify-content: space-around;
+}
+
+.header a{
+	color: white;
+	text-decoration: none;
+}
+
+.user-info{
+	font-size: 20px;
+}
+
+/********************************************************
+				INICIO SIDE-NAV-BAR
+********************************************************/
+
+.nav-mobile{
+	display: none;
+}
+
+.icone-menu{
+	text-align:center;
+	cursor: pointer;
+	display: none;
+}
+
+.side-nav-bar{
+	padding: 50px 30px;
+	color: white;
+	margin-top: 60px;
+	width: 25%;
+	height: 100%;
+	position: fixed;
+	background-color: #333333;
+}
+
+ul{
+	list-style: none;
+}
+
+li{
+	font-size: 20px;
+	margin: 20px 0;
+}
+
+.bloco{
+	width: 25%;
+	height: 100%;
+}
+
+/********************************************************
+				INICIO 
+********************************************************/
+
+.teste{
+	height: 1700px;
+	width: 100%;
+}
+
+/********************************************************
+*********************************************************
+*************** PÁGINA CAD-ITENS.PHP ********************
+*********************************************************				
+********************************************************/
+
+/********************************************************
+				INICIO CAD-ITENS
+********************************************************/
+.add-novo-item-box input[type="file"]{
+	display: block!important;
+}
+
+input[type="file"] {
+  display: none;
+}
+.btnPerson {
+  padding: 10px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #E3E3E3;
+  border-radius: 10px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.alterarImg{
+	display: none;
+}
+
+.alterarImg button{
+	margin: 15px 0;
+	border: none;
+	padding: 5px;
+  	text-align: center;
+  	background-color: #E3E3E3;
+  	border-radius: 15px;
+  	border-bottom: 1px solid black;
+  	border-right: 1px solid black;
+}
+
+.cad-itens{
+	display: flex;
+	color: black;
+	text-align: center;
+	padding: 70px 0;
+}
+
+.cad-itens-wrapper{
+	width: 75%;
+}
+
+.cad-itens-wrapper a{
+	font-size: 20px;
+	padding: 20px;
+	margin-top: 100px!important;
+	border-radius: 10px;
+	background-color: #178700;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.cad-itens-wrapper a:hover{
+	transition: 0.5s;
+	background-color: #116600;
+}
+
+.cad-itens-box-wrapper{
+	margin-top: 30px;
+	padding: 50px 40px;
+	text-align: left;
+}
+
+.cad-itens-box{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.cad-itens-box img{
+	width: 100px;
+	height: 100px;
+}
+
+.cad-itens-box p{
+	margin-top: 10px;
+}
+
+.cad-itens-box > div > p{
+	width: 100%;
+	word-break: break-all;
+}
+
+.cad-itens-box > div:nth-child(1){
+	width: 50%;
+}
+
+hr{
+	background-color: black;
+	border: none;
+	height: 1px;
+	margin-bottom: 40px;
+}
+
+.edit-cad-item{
+	padding: 30px;
+}
+
+.edit-cad-item a{
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 25px;
+	color: white;
+	background-color: black;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.edit-cad-item a:nth-child(1){
+	background-color: #D7D713;
+	margin-right: 20px;
+}
+
+.edit-cad-item a:nth-child(1):hover{
+	transition: 0.5s;
+	background-color: #B6B60A!important;
+}
+
+.edit-cad-item a:nth-child(2){
+	background-color: #DD1515;
+}
+
+.edit-cad-item a:nth-child(2):hover{
+	transition: 0.5s;
+	background-color: #BB0000!important;
+}
+
+.titulo-categoria h1{
+	font-size: 35px;
+	font-style: italic;
+	margin-bottom: 40px;
+}
+
+.item-oculto{
+	opacity: 0.5;
+}
+
+.item-oculto-botoes a:nth-child(1){
+	background-color:  #178700;
+	margin-right: 20px;
+}
+
+.item-oculto-botoes a:nth-child(1):hover{
+	transition: 0.5s;
+	background-color: #116600!important;
+}
+
+.item-oculto-botoes a:nth-child(2){
+	background-color: #D7D713;
+	margin-right: 20px;
+}
+
+.item-oculto-botoes a:nth-child(2):hover{
+	transition: 0.5s;
+	background-color: #B6B60A!important;
+}
+
+.item-oculto-botoes a:nth-child(3){
+	background-color: #DD1515;
+}
+
+.item-oculto-botoes a:nth-child(3):hover{
+	transition: 0.5s;
+	background-color: #BB0000!important;
+}
+
+
+.valor-liquidacao{
+	display: none;
+}
+
+
+/********************************************************
+				INICIO LISTA-ITENS
+********************************************************/
+
+
+
+.lista-produtos{
+	position: relative;
+	height: auto!important;
+	max-height: 600px;
+}
+
+.imagem-modal{
+	border: 1px solid black;
+	background-color: white;
+	padding: 20px;
+	position: absolute;
+	display: none;
+	width: 250px;
+	top: calc(50% - 100px);
+	left: calc(50% - 100px);
+}
+
+.imagem-modal img{
+	width: 100%;
+}
+
+.icone-fechar{
+	position: absolute;
+	z-index: 999;
+	right: -10px;
+	top: -10px;
+	cursor: pointer;
+}
+
+.imagem-modal i{
+	font-size: 40px!important;
+	color: #E70000;
+}
+
+
+/********************************************************
+*********************************************************
+*************** PÁGINA NOVO-ITEM.PHP ********************
+*********************************************************				
+********************************************************/
+
+/********************************************************
+				INICIO ADD-NOVO-ITEM
+********************************************************/
+
+.add-novo-item{
+	padding: 100px 0;
+	text-align: center;
+	display: flex;
+}
+
+.add-novo-item-wrapper{
+	padding: 0 20px;
+	color: black;
+	width: 75%;
+}
+
+.add-novo-item-box{
+	padding: 0 50px;
+	margin: 50px auto;
+	text-align: left;
+}
+
+.add-novo-item-box img{
+	width: 100px;
+	height: 100px;
+}
+
+.add-novo-item-box label{
+	font-size: 30px;
+}
+
+.add-novo-item-box input[type=text]{
+	margin-top: 10px;
+	margin-bottom: 40px;
+	width: 400px;
+	height: 30px;
+	border-radius: 5px;
+	padding: 15px;
+	font-size: 20px;
+}
+
+.add-novo-item-box input:focus, .add-novo-item-box textarea:focus{
+	background-color: #F1F1F1;
+	border: 2px solid #206DFF;
+	outline: none;
+}
+
+.add-novo-item-box textarea{
+	margin-top: 10px;
+	margin-bottom: 40px;
+	width: 400px;
+	height: 80px;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 20px;
+}
+
+.add-novo-item-box input[type=number]{
+	margin-top: 10px;
+	margin-bottom: 40px;
+	width: 150px;
+	height: 30px;
+	border-radius: 5px;
+	padding: 15px;
+	font-size: 20px;
+}
+
+.add-novo-item-box button{
+	background-color: #178700!important;
+	border: none;
+	color: white;
+	height: 50px;
+	width: 150px;
+	font-size: 20px;
+	border-radius: 5px;
+	border-bottom: 3px solid black;
+	border-right: 3px solid black;
+}
+
+.add-novo-item-box button:hover{
+	transition: 0.5s;
+	background-color: <?php echo blue;?>;
+	/*background-color: #116600!important;*/
+	cursor: pointer;
+}
+
+.categoria-item input{
+	margin-right: 10px;
+}
+
+.modal{
+	display: none;
+	position: fixed;
+	left: 20%;
+	color: white;
+	width: 400px;
+	height: 200px;
+	background-color: black;
+}
+
+.roupas, .acessorios, .moda-praia{
+	display: none;
+}
+
+/********************************************************
+*********************************************************
+*************** PÁGINA ESCOLHER-CATEGORIA.PHP *********
+*********************************************************				
+********************************************************/
+
+.escolher-categoria{
+	width: 75%;
+	padding: 10px 0;
+}
+
+.escolher-categoria-wrapper{
+	text-align: left;
+	margin-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 80px;
+}
+
+.escolher-categoria-wrapper a{
+	color: black;
+}
+
+.buscar-produto{
+	padding: 5px;
+	display: flex;
+	border-bottom: 1px solid white;
+}
+
+.buscar-produto input{
+	background-color: #333333;
+	font-size: 20px;
+	color: white!important;
+	border: none!important;
+}
+
+::-webkit-input-placeholder {
+   color: white;
+}
+ 
+:-moz-placeholder { /* Firefox 18- */
+   color: white;  
+}
+ 
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+}
+ 
+:-ms-input-placeholder {  
+   color: white;  
+}
+
+/********************************************************
+*********************************************************
+*************** PÁGINA CAD-CLIENTES.PHP *********
+*********************************************************				
+********************************************************/
+
+.cad-clientes{
+	display: flex;
+	color: black;
+	text-align: center;
+	padding: 70px 0;
+	overflow-y:hidden;
+}
+
+.cad-clientes-wrapper{
+	width: 75%;
+}
+
+.cad-clientes-wrapper a{
+	font-size: 12px;
+	padding: 8px;
+	margin-right: 10px!important;
+	border-radius: 10px;
+	background-color: #178700;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.cad-clientes-box-wrapper a:nth-child(2){
+	background-color: #DD1515!important;
+}
+
+.cad-clientes-box-wrapper a:nth-child(2):hover{
+	background-color: red!important;
+}
+
+.cad-clientes-wrapper a:hover{
+	transition: 0.5s;
+	background-color: #116600;
+}
+
+.cad-clientes-box-wrapper{
+	margin-top: 30px;
+	padding: 50px 40px;
+	text-align: left;
+	overflow: scroll;
+	height: 400px;
+}
+
+th{
+	text-align: center;
+}
+
+.cad-clientes-box-wrapper td, th{
+	min-width: 50px;
+	padding:15px 10px;
+	white-space: nowrap;
+}
+
+.cad-clientes-box-wrapper tr:nth-child(2n+2){
+	background-color: #EBEBEB;
+}
+
+.cad-clientes-box-wrapper th{
+	border: 2px  groove gray;
+}
+
+.cad-clientes-box-wrapper th:nth-child(1){
+	border: none;
+}
+
+/********************************************************
+*********************************************************
+*************** PÁGINA PROMO-DESTAQUE.PHP ***************
+*********************************************************				
+********************************************************/
+
+
+.edit-cad-item-pd a{
+	background-color: #178700;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.edit-cad-item-pd a:nth-child(2){
+	background-color: #178700;
+}
+
+.edit-cad-item-pd a:nth-child(2):hover{
+	background-color: #116600;
+}
+
+.removePD{
+	background-color: red!important;
+}
+
+.removePD:hover{
+	background-color: red!important;
+}
+
+/********************************************************
+*********************************************************
+*************** PÁGINA NOVA-VENDA-P.PHP *****************
+*********************************************************				
+********************************************************/
+
+.tela-add-produtos{
+	display: none;
+	position: absolute;
+	height: 500px;
+	border: 5px groove gray;
+	background-color: white;
+	overflow: scroll;
+	color: black;
+	left: 40%;
+}
+
+.tela-add-produtos th:nth-child(1){
+	border: none;
+}
+
+.tela-add-produtos th{
+	border: 2px solid black;
+}
+
+.tela-add-produtos td{
+	padding: 15px 10px!important;
+}
+
+.tela-add-produtos tr:nth-child(2n+2){
+	background-color: #EBEBEB;
+}
+
+.tela-add-clientes{
+	display: none;
+	position: absolute;
+	width: 45%;
+	height: 500px;
+	border: 5px groove gray;
+	background-color: white;
+	overflow: scroll;
+	color: black;
+	left: 40%;
+}
+
+.tela-add-clientes th:nth-child(1){
+	border: none;
+}
+
+
+.tela-add-clientes tr:nth-child(2n+2){
+	background-color: #EBEBEB;
+}
+
+.tela-add-clientes td{
+	padding: 15px 10px!important;
+}
+
+.seleciona-cliente td{
+	cursor: pointer;
+	background-color: black!important;
+	font-size: 30px;
+}
+
+/********************************************************
+*********************************************************
+*************** PÁGINA MAIS-IMAGENS.PHP ****************
+*********************************************************				
+********************************************************/
+
+.imgProduto img{
+	width: 300px!important;
+	max-width: 70%;
+}
+
+/********************************************************
+*********************************************************
+*************** PÁGINA BANNER-SLIDER.PHP ****************
+*********************************************************				
+********************************************************/
+
+.banner{
+	display: flex;
+	color: black;
+	text-align: center;
+	padding: 90px 0;
+	overflow-y:hidden;
+}
+
+.banner img{
+	width: 70%;
+	margin: 0 auto;
+}
+
+.banner input[type=text]{
+	width: 260px;
+}
+
+.banner textarea{
+	resize: none;
+	width: 260px;
+	height: 140px;
+}
+
+/****************************************************
+					MEDIA QUERIES
+****************************************************/
+
+@media screen and (max-width: 800px){
+	.lista-produtos{
+		max-height: 300px;
+	}
+
+	.imagem-modal{
+		top: calc(50%);
+	}
+
+	header{
+		position: static;
+		width: 100%;
+		padding: 20px 0;
+		background-color: #333333;
+	}
+
+	.header{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.header h2{
+		margin-bottom: 20px;
+	}
+
+	.depoimento-p{
+		padding: 0 20px;
+	}
+
+	.side-nav-bar{
+		padding: 10px 0;
+		color: white;
+		margin-top: 0;
+		width: 100%;
+		position: static;
+		background-color: #333333;
+	}	
+
+	.side-nav-bar ul{
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.nav-desktop{
+		display: none;
+	}
+
+	.icone-menu{
+		display: block;
+	}
+
+	.nav-mobile ul{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.bloco{
+		display: none;
+	}
+
+	.cad-itens-wrapper{
+		width: 100%;
+	}
+
+	.cad-itens-box-wrapper{
+		padding: 0!important;
+		text-align: center;
+	}
+
+	.cad-itens-box{
+		width: 100%!important;
+		padding: 0!important;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.cad-itens-box a{
+		font-size: 15px;
+		margin: 0!important;
+		padding: 5px;
+	}
+
+	h1{
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.add-novo-item-wrapper{
+		width: 100%;
+	}
+
+	.add-novo-item-box{
+		padding: 0 10px;
+	}
+
+	.add-novo-item-box label{
+		font-size: 25px;
+	}
+
+	.add-novo-item-box input[type=text]{
+		width: 96%;
+	}
+
+	.add-novo-item-box textarea{
+		width: 96%;
+		height: 200px;
+	}
+
+	.cad-clientes-wrapper{
+		width: 100%;
+	}
+
+	.cad-clientes-wrapper > a{
+		padding: 8px!important;
+		font-size: 15px!important;
+	}
+
+	.cad-clientes-box-wrapper{
+		padding: 0 10px!important;
+		text-align: center;
+	}
+
+	.cad-clientes-box{
+		width: 100%!important;
+		padding: 0!important;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.edit-cad-item-pd{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.edit-cad-item-pd a{
+		margin-top: 20px!important;
+	}
+
+	.escolher-categoria{
+		width: 100%;
+		padding: 10px 0;
+	}
+
+	.escolher-categoria-wrapper{
+		text-align: center;
+		padding: 0 20px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.dividir-categoria{
+		margin-bottom: 30px;
+	}
+}
